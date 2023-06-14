@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Main landing page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+  font-family: arial;
+  font-size: 18px;
+  background-color : linen
+} 
+.container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+      img {
+        max-width: 80%;
+        order: 1
+      }
+      .image {
+        flex-basis: 40%
+      }
+      .text {
+        font-size: 20px;
+        padding-left: 5px;
+        color: #CD5C5C;
+      }
+
+footer{
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style></head>
+<body>
+
+  <div class="container">
+      <div class="image">
+      <img src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1174&q=80" alt=”header”>
+      </div>
+      <div class="text">
+        <h1> Welcome to the Satifaction Survey!</h1></br>
+      </div>
+  </div>
+  </br>
+    <div style="text-align:center">
+    <label><b>Share your experience with us:</b></label></br></br>
+    <!-- <button class="btn" type="button" onclick="window.location.href='{{ url_for('join') }}';"><b>Fill your review form</button></b>     -->
+    <button class="btn" type="button" onclick="window.location.href='{{ url_for('join') }}';"><b>Fill your review form</b></button>
+    </br></br>
+    
+    <label><b>Check experience of our customers:</b></label></br></br>
+    <button class="btn" type="button" onclick="window.location.href='{{ url_for('participants') }}';"><b>See all reviews</b></button>
+    </br></br>
+    
+    <label><b>See summary of reviews:</b></label></br></br>
+    <button class="btn" type="button" onclick="window.location.href='{{ url_for('wordcloud') }}';"><b>See wordclouds</b></button>
+   
+    </div>
+</body>
+<footer>
+<font size="-1"></br>
+  <p>Thank you for your time!</p>
+</footer>
+<html>
